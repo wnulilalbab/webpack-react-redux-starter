@@ -1,0 +1,387 @@
+$sidebar-panel-width : 200px;
+
+.brand {
+    position: relative;
+    height: 3.438rem
+}
+.brand:after,
+.brand:before {
+    content: " ";
+    display: table
+}
+.brand .brand-logo {
+    margin-top: 1.269rem;
+    margin-bottom: 1.269rem;
+    display: inline-block;
+    padding: 0 1.563rem;
+    font-size: .875rem;
+    text-transform: uppercase;
+    line-height: 1
+}
+.brand .toggle-sidebar {
+    float: right;
+    padding: 1.219rem 1.563rem
+}
+.brand .toggle-apps {
+    float: right;
+    padding: 1.094rem 1.563rem
+}
+@media (max-width: 767px) {
+    .brand {
+        float: left
+    }
+    .brand .toggle-apps {
+        width: 100%;
+        text-align: center
+    }
+    .brand .brand-logo {
+        display: block;
+        float: left;
+        padding-left: 0
+    }
+    .brand .toggle-offscreen {
+        left: 0;
+        float: left;
+        margin: .4065rem .9375rem .4065rem .5rem
+    }
+    .brand .toggle-chat {
+        position: absolute;
+        top: 0;
+        border: .0625rem solid transparent;
+        margin-top: .469rem;
+        margin-bottom: .469rem;
+        border-radius: 0
+    }
+    .header .brand .toggle-chat {
+        right: 0
+    }
+}
+
+.sidebar-panel {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    box-shadow: 0 0 0 .0625rem rgba(0, 0, 0, .075), 0 .0625rem .125rem rgba(0, 0, 0, .25)
+}
+.sidebar-panel .small-menu-visible {
+    display: none!important;
+    visibility: hidden
+}
+.sidebar-panel>nav ul {
+    padding: 0;
+    list-style: none
+}
+
+.sidebar-panel>nav ul>li>a {
+    display: block;
+    text-align: left;
+    line-height: 1;
+    -webkit-transition: background 150ms, color 150ms;
+    transition: background 150ms, color 150ms
+}
+.sidebar-panel>nav ul>li>a>span {
+    display: inline-block
+}
+.sidebar-panel>nav ul>li>a>.fa,
+.sidebar-panel>nav ul>li>a>.glyphicon {
+    padding-right: .9375rem;
+    width: 1.875rem;
+    text-align: center
+}
+.sidebar-panel>nav .heading {
+    position: relative;
+    padding: .8125rem 1.563rem
+}
+.sidebar-panel>nav .badge {
+    border-radius: .8125rem;
+    padding: .125rem .625rem;
+    color: inherit;
+    border: .0625rem solid #e4e4e4;
+    margin-top: -.125rem
+}
+.sidebar-panel>nav li ul li a {
+    padding: .625rem 1.563rem .625rem 3.588rem
+}
+.sidebar-panel>nav li.menu-accordion>a>.expand-indicator-icon {
+    position: relative;
+    display: inline-block;
+    float: right;
+}
+.sidebar-panel>nav>ul>li {
+    position: relative;
+    display: block
+}
+.sidebar-panel>nav>ul>li a {
+    position: relative;
+    padding: .8125rem 1.563rem
+}
+.sidebar-panel>nav>ul>li>ul {
+    padding: 0;
+    margin: 0
+}
+.sidebar-panel>nav>ul>li ul {
+    max-height: 0;
+    overflow: hidden;
+    display: block;
+    width: auto
+}
+.sidebar-panel>nav>ul>li ul>li {
+    opacity: 0;
+    -webkit-transform: translate(30%, 0);
+    -moz-transform: translate(30%, 0);
+    -ms-transform: translate(30%, 0);
+    transform: translate(30%, 0);
+    -webkit-transform: translate3d(30%, 0, 0);
+    -moz-transform: translate3d(30%, 0, 0);
+    -o-transform: translate3d(30%, 0, 0);
+    -ms-transform: translate3d(30%, 0, 0);
+    transform: translate3d(30%, 0, 0);
+    -webkit-transition: transform 150ms, opacity 150ms;
+    transition: transform 150ms, opacity 150ms
+}
+.sidebar-panel>nav>ul>li>.sub-menu .sub-menu {
+    padding-left: 1.563rem
+}
+.sidebar-panel>nav .open>ul {
+    max-height: 51.25rem
+}
+.sidebar-panel>nav .open>ul>li {
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+    -webkit-transition-delay: .5s;
+    transition-delay: .5s
+}
+.sidebar-panel>nav .open>ul>li:first-child {
+    -webkit-transition-delay: 50ms;
+    transition-delay: 50ms
+}
+.sidebar-panel>nav .open>ul>li:nth-child(2) {
+    -webkit-transition-delay: .1s;
+    transition-delay: .1s
+}
+.sidebar-panel>nav .open>ul>li:nth-child(3) {
+    -webkit-transition-delay: .15s;
+    transition-delay: .15s
+}
+.sidebar-panel>nav .open>ul>li:nth-child(4) {
+    -webkit-transition-delay: .2s;
+    transition-delay: .2s
+}
+.sidebar-panel>nav .open>ul>li:nth-child(5) {
+    -webkit-transition-delay: .25s;
+    transition-delay: .25s
+}
+.sidebar-panel>nav .open>ul>li:nth-child(6) {
+    -webkit-transition-delay: .3s;
+    transition-delay: .3s
+}
+.sidebar-panel>nav .open>ul>li:nth-child(7) {
+    -webkit-transition-delay: .35s;
+    transition-delay: .35s
+}
+.sidebar-panel>nav .open>ul>li:nth-child(8) {
+    -webkit-transition-delay: .4s;
+    transition-delay: .4s
+}
+.sidebar-panel>nav .open>ul>li:nth-child(9) {
+    -webkit-transition-delay: .45s;
+    transition-delay: .45s
+}
+@media screen and (min-width: 768px) {
+    .sidebar-panel {
+        -webkit-backface-visibility: hidden;
+        width: 12.5rem;
+        z-index: 1050
+    }
+    .sidebar-panel>nav>ul {
+        width: 12.5rem
+    }
+    .layout-small-menu {
+        min-height: 100%
+    }
+    .layout-small-menu .sidebar-panel {
+        width: 4.375rem;
+        overflow-x: visible!important;
+        overflow-y: visible!important
+    }
+    .layout-small-menu .sidebar-panel .brand-logo,
+    .layout-small-menu .sidebar-panel .toggle-apps {
+        display: none;
+        visibility: hidden;
+        text-align: center
+    }
+    .layout-small-menu .sidebar-panel .small-menu-visible {
+        display: block!important;
+        visibility: visible
+    }
+    .layout-small-menu .sidebar-panel .toggle-sidebar {
+        text-align: center;
+        margin: 0 auto;
+        display: table;
+        float: none
+    }
+    .layout-small-menu .sidebar-panel>nav {
+        overflow: visible!important;
+        right: 0
+    }
+    .layout-small-menu .sidebar-panel>nav>ul {
+        width: 4.375rem
+    }
+    .layout-small-menu .sidebar-panel>nav>ul>li {
+        position: relative;
+        text-align: center
+    }
+    .layout-small-menu .sidebar-panel>nav>ul>li.menu-accordion>a::before {
+        display: none;
+        visibility: hidden
+    }
+    .layout-small-menu .sidebar-panel>nav>ul>li ul>li {
+        opacity: 1;
+        -webkit-transform: translate(0, 0);
+        -moz-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+        transform: translate(0, 0);
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        -o-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0)
+    }
+    .layout-small-menu .sidebar-panel>nav>ul>li>a {
+        padding: .9375rem 0
+    }
+    .layout-small-menu .sidebar-panel>nav>ul>li>a>span {
+        display: none
+    }
+    .layout-small-menu .sidebar-panel>nav>ul>li>a>span.label {
+        display: block;
+        position: absolute;
+        top: .3125rem;
+        right: .3125rem
+    }
+    .layout-small-menu .sidebar-panel>nav>ul>li>a>[class*=" icon-"],
+    .layout-small-menu .sidebar-panel>nav>ul>li>a>[class^=icon-] {
+        display: block;
+        padding: 0;
+        width: 100%
+    }
+    .layout-small-menu .sidebar-panel>nav>ul>li:hover>.sub-menu {
+        max-height: 31.25rem;
+        box-shadow: 0 0 0 .0625rem rgba(0, 0, 0, .075), 0 .0625rem .125rem rgba(0, 0, 0, .25)
+    }
+    .layout-small-menu .sidebar-panel>nav>ul>li>.sub-menu {
+        position: absolute;
+        top: 0;
+        left: 100%;
+        max-height: 0
+    }
+    .layout-small-menu .sidebar-panel>nav>ul>li>.sub-menu a {
+        padding-left: .9375rem;
+        white-space: nowrap
+    }
+    .layout-small-menu .sidebar-panel>nav .multi-level {
+        min-width: 11.25rem
+    }
+    .layout-small-menu .sidebar-panel>nav .multi-level a span {
+        margin-right: 1.563rem
+    }
+    .layout-small-menu .sidebar-panel>nav .multi-level.menu-accordion>a::before {
+        display: none;
+        visibility: hidden
+    }
+    .layout-small-menu .sidebar-panel>nav .multi-level .sub-menu {
+        position: relative;
+        left: auto
+    }
+    .layout-small-menu .sidebar-panel>nav .multi-level .sub-menu>li>a {
+        padding-left: 2.5rem
+    }
+    .layout-small-menu .sidebar-panel>nav .multi-level .sub-menu>li>a .sub-menu {
+        padding-left: 2.813rem
+    }
+    .layout-small-menu .main-panel {
+        margin-left: 4.375rem
+    }
+    .layout-small-menu .fill-container {
+        left: 4.375rem
+    }
+}
+.sidebar-panel,
+.sidebar-panel>.brand {
+    background-color: #fff
+}
+.sidebar-panel>.brand a {
+    color: #59595A
+}
+.sidebar-panel>.brand a:active,
+.sidebar-panel>.brand a:focus,
+.sidebar-panel>.brand a:hover {
+    color: #666667
+}
+.sidebar-panel>.brand .hamburger-icon span {
+    background-color: #59595A
+}
+.sidebar-panel>.brand .hamburger-icon:hover span {
+    background-color: #000
+}
+.sidebar-panel .quick-launch-apps a {
+    color: #59595A
+}
+.sidebar-panel .quick-launch-apps a:active,
+.sidebar-panel .quick-launch-apps a:focus,
+.sidebar-panel .quick-launch-apps a:hover,
+.sidebar-panel .quick-launch-apps a:visited,
+.sidebar-panel>nav li.active>a,
+.sidebar-panel>nav li.open>a {
+    color: #000
+}
+.sidebar-panel>nav li.menu-accordion>a::before {
+    box-shadow: 0 0 0 .0625rem rgba(0, 0, 0, .2)
+}
+.sidebar-panel>nav li.open.menu-accordion>a::before {
+    background: #6164C1;
+    box-shadow: 0 0 0 .0625rem #6164C1
+}
+.sidebar-panel>nav>ul>li.open>a,
+.sidebar-panel>nav>ul>li.open>a:focus,
+.sidebar-panel>nav>ul>li.open>a:hover,
+.sidebar-panel>nav>ul>li>a:hover,
+.sidebar-panel>nav>ul>li>ul {
+    background-color: #fff
+}
+
+.sidebar-panel>nav>ul>li.active>a{
+    color: #4DAF61 !important;
+    background-color: transparent !important;
+}
+
+.sidebar-panel>nav .open>a,
+.sidebar-panel>nav .open>a:focus,
+.sidebar-panel>nav .open>a:hover {
+    background-color: transparent
+}
+.sidebar-panel>nav a {
+    color: #59595A
+}
+.sidebar-panel>nav a:active,
+.sidebar-panel>nav a:focus,
+.sidebar-panel>nav a:hover {
+    color: #000!important
+}
+.sidebar-panel>nav .heading {
+    color: #404040
+}
+
+.sidebar-panel .ps-container>.ps-scrollbar-y-rail>.ps-scrollbar-y {
+    background-color: rgba(255, 255, 255, .5)
+}

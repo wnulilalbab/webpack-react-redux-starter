@@ -1,0 +1,18 @@
+.main-panel>.main-content {
+    padding: .75rem
+}
+.main-panel>.main-content:after,
+.main-panel>.main-content:before {
+    content: " ";
+    display: table
+}
+.layout-fixed-header .main-panel>.header {
+    position: fixed;
+    top: 0
+}
+.layout-fixed-header .main-content {
+    padding-top: 4.188rem
+}
+.layout-fixed-header .main-content.no-padding {
+    padding: 3.438rem 0 0
+}

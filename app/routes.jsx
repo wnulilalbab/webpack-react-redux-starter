@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, IndexRoute, useRouterHistory} from "react-router";
 import { createHistory } from "history";
-import App from "./components/App";
+import App from "./containers/App";
 import About from "./components/About";
 import Hallo from "./components/Hallo";
 import Article from "./components/Article";

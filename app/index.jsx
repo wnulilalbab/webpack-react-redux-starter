@@ -4,9 +4,12 @@ import {Provider} from "react-redux";
 import { hashHistory } from 'react-router';
 import { syncHistoryWithStore } from 'react-router-redux';
 
-//import App from './containers/App';
+//import App from './containers/AppOld';
 import store from './store/store';
 import Root from "./containers/Root";
+
+
+require("./style/index.scss");
 
 // const myLogger = (store) => (next) => (action) => {
 //     console.log("Logged Action: ", action);
@@ -16,7 +19,7 @@ import Root from "./containers/Root";
 // store.subscribe(() => {
 //     console.log("Store Updated", store.getState());
 // })
-
+//
 // render(
 //     <Provider store={store}>
 //         <App/>
